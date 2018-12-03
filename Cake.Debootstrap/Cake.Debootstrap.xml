@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cake.Debootstrap</name>
+    </assembly>
+    <members>
+        <member name="M:Cake.Debootstrap.DebootstrapRunner.#ctor(Cake.Core.IO.IFileSystem,Cake.Core.ICakeEnvironment,Cake.Core.IO.IProcessRunner,Cake.Core.Tooling.IToolLocator,Cake.Core.Diagnostics.ICakeLog)">
+            <summary>
+            Initializes a new instance of the <c>RSyncRunner</c> class.
+            </summary>
+            <param name="fileSystem">The file system.</param>
+            <param name="environment">The environment.</param>
+            <param name="processRunner">The process runner.</param>
+            <param name="tools">The tool locator.</param>
+            <param name="log">The log.</param>
+        </member>
+        <member name="M:Cake.Debootstrap.DebootstrapRunner.#ctor(Cake.Core.ICakeContext)">
+            <summary>
+            Initializes a new instance of the <c>RSyncRunner</c> class.
+            </summary>
+            <param name="ctx">The context.</param>
+        </member>
+        <member name="M:Cake.Debootstrap.DebootstrapRunner.GetToolName">
+            <summary>
+            The rsync tool name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Debootstrap.DebootstrapRunner.GetToolExecutableNames">
+            <summary>
+            The rsync tool names
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Debootstrap.DebootstrapRunner.RunTool(System.String,System.String,System.String,System.String,Cake.Debootstrap.DebootstrapSettings)">
+            <summary>
+            Runs the RSync tool
+            </summary>
+            <param name="settings">The settings to use</param>
+        </member>
+        <member name="P:Cake.Debootstrap.DebootstrapSettings.Architecture">
+            <summary>
+            Set the target architecture (use if dpkg isn't installed).
+            </summary>
+        </member>
+        <member name="P:Cake.Debootstrap.DebootstrapSettings.IncludePackages">
+            <summary>
+            Comma separated list of packages which will be added to download and extract lists.
+            </summary>
+        </member>
+        <member name="P:Cake.Debootstrap.DebootstrapSettings.ExcludePackages">
+            <summary>
+            Comma  separated  list  of packages which will be removed from download and extract
+            lists.WARNING: you can and probably will exclude essential packages, be careful
+            using this option.
+            </summary>
+        </member>
+        <member name="P:Cake.Debootstrap.DebootstrapSettings.NoDependencyResolve">
+            <summary>
+            By   default,  debootstrap  will  attempt  to  automatically  resolve  any  missing
+            dependencies, warning if  any are  found.
+            </summary>
+        </member>
+        <member name="P:Cake.Debootstrap.DebootstrapSettings.Variant">
+            <summary>
+            Name of the bootstrap script variant to use. 
+            </summary>
+        </member>
+        <member name="P:Cake.Debootstrap.DebootstrapSettings.KeyRing">
+            <summary>
+            Override the default keyring for  the  distribution  being  bootstrapped,  and
+            use KEYRING to check signatures of retrieved Release files.
+            </summary>
+        </member>
+        <member name="P:Cake.Debootstrap.DebootstrapSettings.NoGpgCheck">
+            <summary>
+            Disables checking gpg signatures of retrieved Release files.
+            </summary>
+        </member>
+        <member name="P:Cake.Debootstrap.DebootstrapSettings.Verbose">
+            <summary>
+            Produce more info about downloading.
+            </summary>
+        </member>
+        <member name="P:Cake.Debootstrap.DebootstrapSettings.PrintDebs">
+            <summary>
+            Print the packages to be installed, and exit. 
+            </summary>
+        </member>
+        <member name="P:Cake.Debootstrap.DebootstrapSettings.DownloadOnly">
+            <summary>
+            Download packages, but don't perform installation.
+            </summary>
+        </member>
+        <member name="P:Cake.Debootstrap.DebootstrapSettings.KeepDebootstrapDir">
+            <summary>
+            Don't  delete  the  /debootstrap  directory  in  the  target  after  completing the
+            installation.
+            </summary>
+        </member>
+        <member name="M:Cake.Debootstrap.DebootstrapSettings.BuildLinuxArguments(Cake.Core.IO.ProcessArgumentBuilder)">
+            <summary>
+            Applies the setting to the given argument builder.
+            </summary>
+            <param name="args">The args to modify</param>
+            <returns>The args</returns>
+        </member>
+    </members>
+</doc>

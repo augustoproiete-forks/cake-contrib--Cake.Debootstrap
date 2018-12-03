@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Cake.Debootstrap</id>
+    <version>1.0.0</version>
+    <title>Cake.Debootstrap</title>
+    <authors>csnewman</authors>
+    <owners>csnewman</owners>
+    <licenseUrl>https://raw.githubusercontent.com/csnewman/Cake.Debootstrap/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/csnewman/Cake.Debootstrap</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Debootstrap support for Cake</description>
+    <releaseNotes>First Release.</releaseNotes>
+    <copyright>Copyright 2018 csnewman</copyright>
+    <tags>Cake Debootstrap</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\Cake.Debootstrap.dll" target="lib\net46\Cake.Debootstrap.dll" />
+    <file src="bin\Release\Cake.Debootstrap.xml" target="lib\net46\Cake.Debootstrap.xml" />
+  </files>
+</package>
